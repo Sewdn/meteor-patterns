@@ -1,3 +1,9 @@
 <template name="articleItem">
-  <a href="/{{getUrl}}">{{title}}</a> &mdash; {{tldr}}
+<header class="cover-header notes-header-source">
+          <h2 itemprop="name" name="title" class="post-title"><a href="{{pathFor 'article'}}">{{title}}</a></h2>
+          <h3 name="subtitle" class="post-field subtitle post-subtitle">{{tldr}}</h3>
+          <ul class="post-item-meta">
+            <li class="post-item-meta-item"><a href="{{authorUrl}}" class="post-item-author link link-secondary" title="Go to the profile of Nils Parker"><img src="https://avatars1.githubusercontent.com/u/395093?s=140" class="avatar-icon post-item-meta-avatar" title="Nils Parker"><span>{{getAuthor.profile.name}}</span></a> &nbsp; &nbsp; &mdash; &nbsp; &nbsp; <a href="{{gistUrl}}" target="_blank" class="post-item-author link link-secondary" title="Go to the gist"><span>{{gistUrl}}</span></a></li>
+          </ul>
+        </header>
 </template>

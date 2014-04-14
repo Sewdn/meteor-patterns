@@ -18,19 +18,32 @@ _.extend(Article.prototype, {
     var a = this.getAuthor();
     return a.profile.username +"/"+this.url;
   },
+  gistUrl: function(){
+    return "https://gist.github.com/[author]/[gist]"
+      .replace("[author]", this.getAuthor().profile.username)
+      .replace("[gist]", this.gist);
+  },
+  authorUrl: function(){
+    return '/'+this.getAuthor().profile.username;
+  },
+  getFilename: function(){
+    return this.filename ? this.filename : this.url + '.md';
+  },
   getContent: function(callback) {
     var self = this;
+    console.log(this.getFilename());
     var url = "https://gist.github.com/[author]/[gist]/raw/[filename]"
       .replace("[author]", this.getAuthor().profile.username)
       .replace("[gist]", this.gist)
-      .replace("[filename]", this.filename);
+      .replace("[filename]", this.getFilename());
     //https://gist.githubusercontent.com/Sewdn/10616795/raw/0faf346acb4e85f51c569f053b9908d5f2a43268/gistfile1.md
     var r = HTTP.get("https://api.github.com/gists/"+this.gist, function(err, res){
       if(err){
         callback(err);
       } else {
-        if(res && res.data && res.data.files && res.data.files[self.filename]){
-          callback(undefined, res.data.files[self.filename].content);
+        console.log(res.data);
+        if(res && res.data && res.data.files && res.data.files[self.getFilename()]){
+          callback(undefined, res.data.files[self.getFilename()].content);
         }
       }
 
@@ -59,5 +72,8 @@ if(Meteor.isServer){
   });
   Meteor.publish('publishedArticles', function () {
     return Articles.find({published: true});
+  });
+  Meteor.publish('publishedAuthorArticles', function (userId) {
+    return Articles.find({published: true, author: userId});
   });
 }

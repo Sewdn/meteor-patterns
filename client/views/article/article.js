@@ -1,6 +1,8 @@
+Template.article.created = function(){
+  Session.set('articleContent', 'loading...');
+};
 Template.article.rendered = function(){
   $('pre code').each(function(i, e) {
-    console.log(e);
     hljs.highlightBlock(e);
   });
 };

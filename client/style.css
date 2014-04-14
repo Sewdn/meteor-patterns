@@ -79,7 +79,7 @@ body {
 
 /* line 14, ../.scss/style.scss */
 .layout-single-column {
-  width: 640px;
+  width: 960px;
   margin: 0 auto;
 }
 
@@ -88,33 +88,14 @@ body {
   height: 100%;
 }
 /* line 20, ../.scss/style.scss */
-.post-article .layout-single-column {
-  width: 700px;
-}
-/* line 23, ../.scss/style.scss */
 .post-article .background-size-full {
   max-width: 100%;
   width: 100%;
   margin-top: 0;
   position: relative;
 }
-/* line 29, ../.scss/style.scss */
-.post-article h2 {
-  letter-spacing: -0.02em;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 32px;
-  line-height: 1.2;
-  padding-top: 31px;
-  margin-bottom: 2px;
-}
-/* line 38, ../.scss/style.scss */
-.post-article p {
-  display: block;
-  margin-bottom: 30px;
-}
 
-/* line 44, ../.scss/style.scss */
+/* line 28, ../.scss/style.scss */
 .post-content {
   font-family: "freight-text-pro",Georgia,Cambria,"Times New Roman",Times,serif;
   letter-spacing: .01rem;
@@ -124,7 +105,7 @@ body {
   line-height: 1.5;
 }
 
-/* line 53, ../.scss/style.scss */
+/* line 37, ../.scss/style.scss */
 .background-size-full {
   display: table;
   height: 100%;
@@ -135,23 +116,23 @@ body {
   position: relative;
 }
 
-/* line 63, ../.scss/style.scss */
+/* line 47, ../.scss/style.scss */
 #login-buttons {
   position: fixed;
   z-index: 999;
 }
 
-/* line 68, ../.scss/style.scss */
+/* line 52, ../.scss/style.scss */
 .cover {
   height: 400px;
   margin-bottom: 60px;
   color: white;
 }
-/* line 72, ../.scss/style.scss */
+/* line 56, ../.scss/style.scss */
 .cover header {
-  margin-top: 100px;
+  margin-top: 160px;
 }
-/* line 75, ../.scss/style.scss */
+/* line 59, ../.scss/style.scss */
 .cover .post-title {
   letter-spacing: -0.02em;
   font-weight: 700;
@@ -161,7 +142,7 @@ body {
   line-height: 1.1;
   margin-bottom: 8px;
 }
-/* line 84, ../.scss/style.scss */
+/* line 68, ../.scss/style.scss */
 .cover .post-field.subtitle {
   letter-spacing: -0.02em;
   font-weight: 300;
@@ -172,18 +153,18 @@ body {
   margin: 0;
 }
 
-/* line 96, ../.scss/style.scss */
+/* line 80, ../.scss/style.scss */
 .article-list li {
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 
-/* line 100, ../.scss/style.scss */
+/* line 84, ../.scss/style.scss */
 .post-item-meta {
   font-size: 14px;
   color: #b3b3b1;
 }
 
-/* line 104, ../.scss/style.scss */
+/* line 88, ../.scss/style.scss */
 .post-item-meta-avatar {
   display: inline-block;
   width: 30px;
@@ -193,7 +174,7 @@ body {
   margin-bottom: -10px;
 }
 
-/* line 113, ../.scss/style.scss */
+/* line 97, ../.scss/style.scss */
 .avatar-icon {
   width: 32px;
   height: 32px;
@@ -202,27 +183,26 @@ body {
   border-radius: 100%;
 }
 
-/* line 121, ../.scss/style.scss */
+/* line 105, ../.scss/style.scss */
 .story-cover-content .post-item-meta {
   letter-spacing: -0.02em;
   font-weight: 400;
   font-style: normal;
 }
 
-/* line 127, ../.scss/style.scss */
+/* line 111, ../.scss/style.scss */
 a {
   color: #666665;
   text-decoration: none;
 }
 
-/* line 132, ../.scss/style.scss */
+/* line 116, ../.scss/style.scss */
 .cover-header .post-item-meta {
   margin-top: 12px;
 }
 
-/* line 137, ../.scss/style.scss */
+/* line 121, ../.scss/style.scss */
 .home h1 {
-  letter-spacing: -0.02em;
   font-weight: 700;
   font-style: normal;
   letter-spacing: -0.04em;
@@ -234,7 +214,7 @@ a {
   padding-top: 64px;
 }
 
-/* line 151, ../.scss/style.scss */
+/* line 134, ../.scss/style.scss */
 h1, h2 {
   font-family: 'Source Sans Pro', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
@@ -242,15 +222,37 @@ h1, h2 {
   padding: 0;
 }
 
-/* line 158, ../.scss/style.scss */
+/* line 142, ../.scss/style.scss */
 pre code {
   font-family: 'Source Code Pro', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 18px;
+  letter-spacing: -0.04em;
   margin: 0;
   padding: 0;
 }
-/* line 164, ../.scss/style.scss */
+/* line 149, ../.scss/style.scss */
+pre code.hljs {
+  padding: 2em;
+}
+/* line 152, ../.scss/style.scss */
 pre code span {
   font-weight: 400;
+}
+
+/* line 158, ../.scss/style.scss */
+h2 {
+  letter-spacing: -0.02em;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 1.2;
+  padding-top: 31px;
+  margin-bottom: 2px;
+}
+
+/* line 167, ../.scss/style.scss */
+p {
+  display: block;
+  margin-bottom: 30px;
 }
