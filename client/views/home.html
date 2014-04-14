@@ -1,0 +1,17 @@
+<template name="home">
+  <div class="cover background-size-full">
+    <div class="">
+      <h1>Meteor Design Patterns</h1>
+    </div>
+  </div>
+  <div class="layout-single-column">
+  {{> homeArticles}}
+  {{#if currentUser}}
+  loggedin
+  {{/if}}
+  </div>
+</template>
+
+<template name="homeArticles">
+  {{> articleList published}}
+</template>

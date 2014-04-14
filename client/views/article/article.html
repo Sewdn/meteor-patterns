@@ -1,0 +1,17 @@
+<template name="article">
+  <article class="post-article">
+    <div class="cover background-size-full">
+      <div class="post-title">
+      <h1>{{title}}</h1>
+      </div>
+      by {{getAuthor.profile.name}}
+    </div>
+    <div class="post-content">
+      <div class="post-inner layout-single-column">
+      {{#markdown}}
+{{{renderContent}}}
+      {{/markdown}}
+      </div>
+    </div>
+  </article>
+</template>
