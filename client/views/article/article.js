@@ -18,7 +18,6 @@ Template.article.helpers({
       if(content){
         Session.set('articleContent', content);
         $('pre code').each(function(i, e) {
-          console.log(e);
           hljs.highlightBlock(e);
         });
       }

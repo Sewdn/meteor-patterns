@@ -256,3 +256,13 @@ p {
   display: block;
   margin-bottom: 30px;
 }
+
+/* line 172, ../.scss/style.scss */
+article {
+  margin-bottom: 60px;
+}
+
+/* line 176, ../.scss/style.scss */
+#disqus_thread {
+  margin-bottom: 60px;
+}

@@ -16,7 +16,7 @@ _.extend(Article.prototype, {
   },
   getUrl: function(){
     var a = this.getAuthor();
-    return a.profile.username +"/"+this.url;
+    return "/"+a.profile.username +"/"+this.url;
   },
   gistUrl: function(){
     return "https://gist.github.com/[author]/[gist]"
@@ -31,7 +31,6 @@ _.extend(Article.prototype, {
   },
   getContent: function(callback) {
     var self = this;
-    console.log(this.getFilename());
     var url = "https://gist.github.com/[author]/[gist]/raw/[filename]"
       .replace("[author]", this.getAuthor().profile.username)
       .replace("[gist]", this.gist)
@@ -41,7 +40,6 @@ _.extend(Article.prototype, {
       if(err){
         callback(err);
       } else {
-        console.log(res.data);
         if(res && res.data && res.data.files && res.data.files[self.getFilename()]){
           callback(undefined, res.data.files[self.getFilename()].content);
         }
