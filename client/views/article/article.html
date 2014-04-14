@@ -1,10 +1,15 @@
 <template name="article">
   <article class="post-article">
     <div class="cover background-size-full">
-      <div class="post-title">
-      <h1>{{title}}</h1>
+      <div class="cover-content layout-single-column">
+        <header class="cover-header notes-header-source">
+          <h1 itemprop="name" name="title" class="post-title">{{title}}</h1>
+          <h2 name="subtitle" class="post-field subtitle post-subtitle">{{tldr}}</h2>
+          <ul class="post-item-meta">
+            <li class="post-item-meta-item"><a href="/@nilsaparker" class="post-item-author link link-secondary" title="Go to the profile of Nils Parker"><img src="https://avatars1.githubusercontent.com/u/395093?s=140" class="avatar-icon post-item-meta-avatar" title="Nils Parker"><span>{{getAuthor.profile.name}}</span></a></li>
+          </ul>
+        </header>
       </div>
-      by {{getAuthor.profile.name}}
     </div>
     <div class="post-content">
       <div class="post-inner layout-single-column">

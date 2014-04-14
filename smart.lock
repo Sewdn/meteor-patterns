@@ -13,6 +13,9 @@
       },
       "fast-render": {
         "version": "0.1.26"
+      },
+      "highlightjs": {
+        "path": "../meteor-highlightjs"
       }
     },
     "packages": {
@@ -35,6 +38,9 @@
         "git": "https://github.com/arunoda/meteor-fast-render.git",
         "tag": "v0.1.26",
         "commit": "bfabe15c5acfbdec7c3a815b956bb49c41421ab2"
+      },
+      "highlightjs": {
+        "path": "../meteor-highlightjs"
       },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",

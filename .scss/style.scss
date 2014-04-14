@@ -1,6 +1,6 @@
 @import "compass/reset";
 body {
-  font-family: "jaf-bernino-sans","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+  font-family: 'Source Sans Pro', "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing: -0.02em;
   font-weight: 400;
   font-style: normal;
@@ -27,7 +27,6 @@ body {
     position: relative;
   }
   h2 {
-    font-family: "jaf-bernino-sans","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
     letter-spacing: -0.02em;
     font-weight: 700;
     font-style: normal;
@@ -69,23 +68,100 @@ body {
 .cover {
   height: 400px;
   margin-bottom: 60px;
-  h1 {
-    font-family: "jaf-bernino-sans","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+  color: white;
+  header {
+    margin-top:100px;
+  }
+  .post-title {
     letter-spacing: -0.02em;
     font-weight: 700;
     font-style: normal;
-    font-size: 64px;
-    line-height: 1.2;
-    position: absolute;
-    bottom: 100px;
-    color: white;
-    text-align: center;
-    width:100%;
+    letter-spacing: -0.04em;
+    font-size: 50px;
+    line-height: 1.1;
+    margin-bottom: 8px;
+  }
+  .post-field.subtitle {
+    letter-spacing: -0.02em;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 1.1;
+    color: #666665;
+    margin: 0;
   }
 }
 
 .article-list {
   li {
     margin-bottom: 30px;
+  }
+}
+.post-item-meta {
+font-size: 14px;
+color: #b3b3b1;
+}
+.post-item-meta-avatar {
+display: inline-block;
+width: 30px;
+height: 30px;
+line-height: 30px;
+margin-right: 8px;
+margin-bottom: -10px;
+}
+
+.avatar-icon {
+width: 32px;
+height: 32px;
+-webkit-border-radius: 100%;
+-moz-border-radius: 100%;
+border-radius: 100%;
+}
+
+.story-cover-content .post-item-meta {
+letter-spacing: -0.02em;
+font-weight: 400;
+font-style: normal;
+}
+
+a {
+  color: #666665;
+  text-decoration: none;
+}
+
+.cover-header .post-item-meta {
+margin-top: 12px;
+}
+
+.home {
+  h1 {
+    letter-spacing: -0.02em;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: -0.04em;
+    font-size: 64px;
+    line-height: 1.1;
+    color: white;
+    width:100%;
+    text-align: center;
+    padding-top:64px;
+  }
+}
+
+h1, h2 {
+  font-family: 'Source Sans Pro', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+pre code {
+  font-family: 'Source Code Pro', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  span {
+    font-weight:400;
   }
 }

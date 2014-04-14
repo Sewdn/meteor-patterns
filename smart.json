@@ -3,6 +3,9 @@
     "iron-router": {},
     "collection-behaviours": {},
     "github-api": {},
-    "fast-render": {}
+    "fast-render": {},
+    "highlightjs":{
+      "path": "/home/psoudan/workspace/meteor-highlightjs"
+    }
   }
 }

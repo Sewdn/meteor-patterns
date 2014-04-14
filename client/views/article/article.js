@@ -1,5 +1,8 @@
 Template.article.rendered = function(){
-
+  $('pre code').each(function(i, e) {
+    console.log(e);
+    hljs.highlightBlock(e);
+  });
 };
 
 Template.article.helpers({
@@ -11,7 +14,11 @@ Template.article.helpers({
         return Session.set('articleContent', err.response.data.message);
       }
       if(content){
-        return Session.set('articleContent', content);
+        Session.set('articleContent', content);
+        $('pre code').each(function(i, e) {
+          console.log(e);
+          hljs.highlightBlock(e);
+        });
       }
     });
     return Session.get('articleContent');
@@ -19,7 +26,5 @@ Template.article.helpers({
 });
 
 Template.article.events({
-  "click event": function(){
 
-  }
 });

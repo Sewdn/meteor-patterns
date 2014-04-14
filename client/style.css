@@ -65,7 +65,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 2, ../.scss/style.scss */
 body {
-  font-family: "jaf-bernino-sans","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+  font-family: 'Source Sans Pro', "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing: -0.02em;
   font-weight: 400;
   font-style: normal;
@@ -100,7 +100,6 @@ body {
 }
 /* line 29, ../.scss/style.scss */
 .post-article h2 {
-  font-family: "jaf-bernino-sans","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
   letter-spacing: -0.02em;
   font-weight: 700;
   font-style: normal;
@@ -109,13 +108,13 @@ body {
   padding-top: 31px;
   margin-bottom: 2px;
 }
-/* line 39, ../.scss/style.scss */
+/* line 38, ../.scss/style.scss */
 .post-article p {
   display: block;
   margin-bottom: 30px;
 }
 
-/* line 45, ../.scss/style.scss */
+/* line 44, ../.scss/style.scss */
 .post-content {
   font-family: "freight-text-pro",Georgia,Cambria,"Times New Roman",Times,serif;
   letter-spacing: .01rem;
@@ -125,7 +124,7 @@ body {
   line-height: 1.5;
 }
 
-/* line 54, ../.scss/style.scss */
+/* line 53, ../.scss/style.scss */
 .background-size-full {
   display: table;
   height: 100%;
@@ -136,33 +135,122 @@ body {
   position: relative;
 }
 
-/* line 64, ../.scss/style.scss */
+/* line 63, ../.scss/style.scss */
 #login-buttons {
   position: fixed;
   z-index: 999;
 }
 
-/* line 69, ../.scss/style.scss */
+/* line 68, ../.scss/style.scss */
 .cover {
   height: 400px;
   margin-bottom: 60px;
+  color: white;
 }
 /* line 72, ../.scss/style.scss */
-.cover h1 {
-  font-family: "jaf-bernino-sans","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+.cover header {
+  margin-top: 100px;
+}
+/* line 75, ../.scss/style.scss */
+.cover .post-title {
   letter-spacing: -0.02em;
   font-weight: 700;
   font-style: normal;
-  font-size: 64px;
-  line-height: 1.2;
-  position: absolute;
-  bottom: 100px;
-  color: white;
-  text-align: center;
-  width: 100%;
+  letter-spacing: -0.04em;
+  font-size: 50px;
+  line-height: 1.1;
+  margin-bottom: 8px;
+}
+/* line 84, ../.scss/style.scss */
+.cover .post-field.subtitle {
+  letter-spacing: -0.02em;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 1.1;
+  color: #666665;
+  margin: 0;
 }
 
-/* line 88, ../.scss/style.scss */
+/* line 96, ../.scss/style.scss */
 .article-list li {
   margin-bottom: 30px;
+}
+
+/* line 100, ../.scss/style.scss */
+.post-item-meta {
+  font-size: 14px;
+  color: #b3b3b1;
+}
+
+/* line 104, ../.scss/style.scss */
+.post-item-meta-avatar {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  margin-right: 8px;
+  margin-bottom: -10px;
+}
+
+/* line 113, ../.scss/style.scss */
+.avatar-icon {
+  width: 32px;
+  height: 32px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+}
+
+/* line 121, ../.scss/style.scss */
+.story-cover-content .post-item-meta {
+  letter-spacing: -0.02em;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* line 127, ../.scss/style.scss */
+a {
+  color: #666665;
+  text-decoration: none;
+}
+
+/* line 132, ../.scss/style.scss */
+.cover-header .post-item-meta {
+  margin-top: 12px;
+}
+
+/* line 137, ../.scss/style.scss */
+.home h1 {
+  letter-spacing: -0.02em;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: -0.04em;
+  font-size: 64px;
+  line-height: 1.1;
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding-top: 64px;
+}
+
+/* line 151, ../.scss/style.scss */
+h1, h2 {
+  font-family: 'Source Sans Pro', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 158, ../.scss/style.scss */
+pre code {
+  font-family: 'Source Code Pro', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+/* line 164, ../.scss/style.scss */
+pre code span {
+  font-weight: 400;
 }
