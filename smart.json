@@ -4,8 +4,6 @@
     "collection-behaviours": {},
     "github-api": {},
     "fast-render": {},
-    "highlightjs":{
-      "path": "/home/psoudan/workspace/meteor-highlightjs"
-    }
+    "highlightjs":{}
   }
 }
