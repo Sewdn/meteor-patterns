@@ -69,7 +69,7 @@ body {
   letter-spacing: -0.02em;
   font-weight: 400;
   font-style: normal;
-  color: #333332;
+  color: #444443;
   font-size: 18px;
   line-height: 1.4;
   text-rendering: optimizeLegibility;
@@ -104,8 +104,30 @@ body {
   font-size: 22px;
   line-height: 1.5;
 }
+/* line 35, ../.scss/style.scss */
+.post-content h2 {
+  padding-top: 64px;
+}
+/* line 38, ../.scss/style.scss */
+.post-content p > code {
+  font-family: 'Source Code Pro', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #eeeeed;
+  font-size: 0.8em;
+  padding: 2px;
+}
+/* line 44, ../.scss/style.scss */
+.post-content ul {
+  list-style-type: circle;
+  padding-left: 2em;
+  margin-bottom: 1em;
+}
+/* line 47, ../.scss/style.scss */
+.post-content ul > li {
+  padding-left: 0.5em;
+  padding-bottom: 0.5em;
+}
 
-/* line 37, ../.scss/style.scss */
+/* line 55, ../.scss/style.scss */
 .background-size-full {
   display: table;
   height: 100%;
@@ -116,23 +138,23 @@ body {
   position: relative;
 }
 
-/* line 47, ../.scss/style.scss */
+/* line 65, ../.scss/style.scss */
 #login-buttons {
   position: fixed;
   z-index: 999;
 }
 
-/* line 52, ../.scss/style.scss */
+/* line 70, ../.scss/style.scss */
 .cover {
   height: 400px;
   margin-bottom: 60px;
   color: white;
 }
-/* line 56, ../.scss/style.scss */
+/* line 74, ../.scss/style.scss */
 .cover header {
   margin-top: 160px;
 }
-/* line 59, ../.scss/style.scss */
+/* line 77, ../.scss/style.scss */
 .cover .post-title {
   letter-spacing: -0.02em;
   font-weight: 700;
@@ -142,29 +164,29 @@ body {
   line-height: 1.1;
   margin-bottom: 8px;
 }
-/* line 68, ../.scss/style.scss */
+/* line 86, ../.scss/style.scss */
 .cover .post-field.subtitle {
   letter-spacing: -0.02em;
   font-weight: 300;
   font-style: normal;
   font-size: 30px;
   line-height: 1.1;
-  color: #666665;
+  color: #888887;
   margin: 0;
 }
 
-/* line 80, ../.scss/style.scss */
+/* line 98, ../.scss/style.scss */
 .article-list li {
   margin-bottom: 60px;
 }
 
-/* line 84, ../.scss/style.scss */
+/* line 102, ../.scss/style.scss */
 .post-item-meta {
   font-size: 14px;
   color: #b3b3b1;
 }
 
-/* line 88, ../.scss/style.scss */
+/* line 106, ../.scss/style.scss */
 .post-item-meta-avatar {
   display: inline-block;
   width: 30px;
@@ -174,7 +196,7 @@ body {
   margin-bottom: -10px;
 }
 
-/* line 97, ../.scss/style.scss */
+/* line 115, ../.scss/style.scss */
 .avatar-icon {
   width: 32px;
   height: 32px;
@@ -183,25 +205,25 @@ body {
   border-radius: 100%;
 }
 
-/* line 105, ../.scss/style.scss */
+/* line 123, ../.scss/style.scss */
 .story-cover-content .post-item-meta {
   letter-spacing: -0.02em;
   font-weight: 400;
   font-style: normal;
 }
 
-/* line 111, ../.scss/style.scss */
+/* line 129, ../.scss/style.scss */
 a {
-  color: #666665;
+  color: #888887;
   text-decoration: none;
 }
 
-/* line 116, ../.scss/style.scss */
+/* line 134, ../.scss/style.scss */
 .cover-header .post-item-meta {
   margin-top: 12px;
 }
 
-/* line 121, ../.scss/style.scss */
+/* line 139, ../.scss/style.scss */
 .home h1 {
   font-weight: 700;
   font-style: normal;
@@ -214,7 +236,7 @@ a {
   padding-top: 64px;
 }
 
-/* line 134, ../.scss/style.scss */
+/* line 152, ../.scss/style.scss */
 h1, h2 {
   font-family: 'Source Sans Pro', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
@@ -222,7 +244,11 @@ h1, h2 {
   padding: 0;
 }
 
-/* line 142, ../.scss/style.scss */
+/* line 159, ../.scss/style.scss */
+pre {
+  margin-bottom: 1em;
+}
+/* line 160, ../.scss/style.scss */
 pre code {
   font-family: 'Source Code Pro', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
@@ -231,16 +257,16 @@ pre code {
   margin: 0;
   padding: 0;
 }
-/* line 149, ../.scss/style.scss */
+/* line 167, ../.scss/style.scss */
 pre code.hljs {
   padding: 2em;
 }
-/* line 152, ../.scss/style.scss */
+/* line 170, ../.scss/style.scss */
 pre code span {
   font-weight: 400;
 }
 
-/* line 158, ../.scss/style.scss */
+/* line 177, ../.scss/style.scss */
 h2 {
   letter-spacing: -0.02em;
   font-weight: 700;
@@ -251,18 +277,18 @@ h2 {
   margin-bottom: 2px;
 }
 
-/* line 167, ../.scss/style.scss */
+/* line 186, ../.scss/style.scss */
 p {
   display: block;
   margin-bottom: 30px;
 }
 
-/* line 172, ../.scss/style.scss */
+/* line 191, ../.scss/style.scss */
 article {
   margin-bottom: 60px;
 }
 
-/* line 176, ../.scss/style.scss */
+/* line 195, ../.scss/style.scss */
 #disqus_thread {
   margin-bottom: 60px;
 }

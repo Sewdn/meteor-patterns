@@ -4,7 +4,7 @@ body {
   letter-spacing: -0.02em;
   font-weight: 400;
   font-style: normal;
-  color: #333332;
+  color: #444443;
   font-size: 18px;
   line-height: 1.4;
   text-rendering: optimizeLegibility;
@@ -32,6 +32,24 @@ body {
   font-style: normal;
   font-size: 22px;
   line-height: 1.5;
+  h2 {
+    padding-top: 64px;
+  }
+  p > code {
+    font-family: 'Source Code Pro', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #eeeeed;
+    font-size: 0.8em;
+    padding: 2px;
+  }
+  ul {
+    list-style-type:circle;
+    padding-left:2em;
+    & > li {
+      padding-left:0.5em;
+      padding-bottom:0.5em;
+    }
+    margin-bottom: 1em;
+  }
 }
 
 .background-size-full {
@@ -71,7 +89,7 @@ body {
     font-style: normal;
     font-size: 30px;
     line-height: 1.1;
-    color: #666665;
+    color: #888887;
     margin: 0;
   }
 }
@@ -109,7 +127,7 @@ font-style: normal;
 }
 
 a {
-  color: #666665;
+  color: #888887;
   text-decoration: none;
 }
 
@@ -153,6 +171,7 @@ pre {
       font-weight:400;
     }
   }
+  margin-bottom: 1em;
 }
 
 h2 {
