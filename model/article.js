@@ -19,20 +19,27 @@ _.extend(Article.prototype, {
     return "/"+a.profile.username +"/"+this.url;
   },
   gistUrl: function(){
-    return "https://gist.github.com/[author]/[gist]"
-      .replace("[author]", this.getAuthor().profile.username)
-      .replace("[gist]", this.gist);
+    var a = this.getAuthor();
+    if(!!a)
+      return "https://gist.github.com/[author]/[gist]"
+        .replace("[author]", a.profile.username)
+        .replace("[gist]", this.gist);
   },
   authorUrl: function(){
-    return '/'+this.getAuthor().profile.username;
+    var a = this.getAuthor();
+    if(!!a)
+      return '/'+a.profile.username;
   },
   getFilename: function(){
     return this.filename ? this.filename : this.url + '.md';
   },
   getContent: function(callback) {
+    var a = this.getAuthor();
+    if(!a)
+      return;
     var self = this;
     var url = "https://gist.github.com/[author]/[gist]/raw/[filename]"
-      .replace("[author]", this.getAuthor().profile.username)
+      .replace("[author]", a.profile.username)
       .replace("[gist]", this.gist)
       .replace("[filename]", this.getFilename());
     //https://gist.githubusercontent.com/Sewdn/10616795/raw/0faf346acb4e85f51c569f053b9908d5f2a43268/gistfile1.md
@@ -66,7 +73,11 @@ if(Meteor.isServer){
     return Articles.find(id);
   });
   Meteor.publish('articleByUrl', function (url) {
-    return Articles.find({url: url});
+    var a = Articles.findOne({url: url});
+    return [
+      Articles.find({url: url}),
+      Meteor.users.find(a.author, {fields: {'profile':1}})
+    ];
   });
   Meteor.publish('publishedArticles', function () {
     return Articles.find({published: true});
