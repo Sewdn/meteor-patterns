@@ -1,4 +1,5 @@
 @import "compass/reset";
+@import "compass/css3";
 body {
   font-family: 'Source Sans Pro', "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing: -0.02em;
@@ -133,10 +134,47 @@ a {
 
 .cover-header .post-item-meta {
 margin-top: 12px;
+
+}
+
+.logo{
+  display:block;
+  position:absolute;
+  svg {
+    display: block;
+    width: 100%;
+  }
+}
+.cover {
+  overflow: hidden;
+  .logo {
+    position:absolute;
+    top: 0px;
+    width:50%;
+    height:160%;
+    svg {
+      fill: #111;
+    }
+  }
+  .cover-content{
+    position: relative;
+  }
+  a {
+    position: relative;
+  }
+}
+
+.profile {
+  .avatar-icon{
+    width:140px;
+    height:140px;
+  }
 }
 
 .home {
   h1 {
+    position: absolute;
+    top: 0px;
     font-weight: 700;
     font-style: normal;
     letter-spacing: -0.04em;
@@ -194,4 +232,60 @@ article{
 
 #disqus_thread{
   margin-bottom:60px;
+}
+.homeLink {
+  font-size: 12px;
+}
+
+.applicationFooter {
+  margin-top: 160px;
+  border-collapse: collapse;
+  overflow: hidden;
+  width: 100%;
+  background-color: #ddddde;
+  color: #777776;
+  a {
+    color: #333332;
+  }
+  .footer-row{
+    overflow: hidden;
+    max-width: 960px;
+    margin: 0px auto;
+    position: relative;
+    section {
+      position: relative;
+      float:left;
+      display:inline-block;
+      @include box-sizing(border-box);
+      .subtitle{
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #999998;
+        margin-bottom: .5rem;
+      }
+      vertical-align: top;
+      width: 50%;
+      height: 100%;
+      padding: 3em;
+      &.about{
+        text-align: right;
+        border-right: solid 1px #bbb;
+      }
+      &.join{
+        float:right;
+      }
+    }
+    .logo {
+      display: inline-block;
+      width:64px;
+      height:64px;
+      position:relative;
+      margin-bottom: 3em;
+      svg {
+        fill: #444443;
+      }
+    }
+  }
 }
