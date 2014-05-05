@@ -18,6 +18,12 @@ _.extend(Article.prototype, {
     var a = this.getAuthor();
     return "/"+a.profile.username +"/"+this.url;
   },
+  getShortUrl: function(){
+    if(this.url && !this.shortUrl){
+      Meteor.call('shortenArticleUrl', this._id);
+    }
+    return this.shortUrl;
+  },
   gistUrl: function(){
     var a = this.getAuthor();
     if(!!a)
@@ -64,11 +70,36 @@ _.extend(Article.prototype, {
     //   // ajax error
     // });
 
+  },
+  shareText: function(){
+    return "interesting @meteorjs pattern: " + this.title + " - " + this.tldr;
   }
 });
 
 //PB.constructSelector('Article', Article.prototype, Articles);
 if(Meteor.isServer){
+  Meteor.methods({
+    'shortenArticleUrl': function(articleId){
+      var article = Articles.findOne(articleId);
+      if(article){
+        var Future = Npm.require('fibers/future'),
+          fut = new Future(),
+          Fiber = Npm.require('fibers');
+        Fiber(function() {
+          var u = Meteor.absoluteUrl(article.getUrl().substring(1));
+          bitly.shorten(u, Meteor.bindEnvironment(function(err, response) {
+            if (err)
+              throw err;
+            if(!response.data || !response.data.url)
+              return fut.return();
+            Articles.update(articleId, {$set:{shortUrl: response.data.url}});
+            return fut.return(response.data.url);
+          }));
+        }).run();
+        return fut.wait();
+      }
+    }
+  });
   Meteor.publish('article', function (id) {
     return Articles.find(id);
   });

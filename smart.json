@@ -4,6 +4,7 @@
     "collection-behaviours": {},
     "github-api": {},
     "fast-render": {},
-    "highlightjs":{}
+    "highlightjs": {},
+    "bitlywrap": {}
   }
 }
