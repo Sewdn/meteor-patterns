@@ -5,6 +5,9 @@
     "github-api": {},
     "fast-render": {},
     "highlightjs": {},
-    "bitlywrap": {}
+    "bitlywrap": {
+      "git": "https://github.com/johndevor/meteor-bitlywrap",
+      "branch": "master"
+    }
   }
 }
