@@ -38,7 +38,6 @@ if(Meteor.isServer){
 if(Meteor.isClient){
   Router.configure({
     load: function () {
-      console.log(this.path);
       analytics.page(this.path);
     }
   });
