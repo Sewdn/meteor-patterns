@@ -172,18 +172,13 @@ margin-top: 12px;
 }
 
 .home {
-  h1 {
-    position: absolute;
-    top: 0px;
-    font-weight: 700;
-    font-style: normal;
-    letter-spacing: -0.04em;
-    font-size: 64px;
-    line-height: 1.1;
-    color: white;
-    width:100%;
-    text-align: center;
-    padding-top:64px;
+  .logo {
+
+    // -webkit-transform: translateX(-20px);
+    // margin: 20px auto;
+    svg {
+      fill: #333;
+    }
   }
 }
 
@@ -271,9 +266,9 @@ article{
       padding: 3em;
       &.about{
         text-align: right;
-        border-right: solid 1px #bbb;
       }
       &.join{
+        border-left: solid 1px #bbb;
         float:right;
       }
     }

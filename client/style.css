@@ -264,22 +264,12 @@ a {
   height: 140px;
 }
 
-/* line 175, ../.scss/style.scss */
-.home h1 {
-  position: absolute;
-  top: 0px;
-  font-weight: 700;
-  font-style: normal;
-  letter-spacing: -0.04em;
-  font-size: 64px;
-  line-height: 1.1;
-  color: white;
-  width: 100%;
-  text-align: center;
-  padding-top: 64px;
+/* line 179, ../.scss/style.scss */
+.home .logo svg {
+  fill: #333;
 }
 
-/* line 190, ../.scss/style.scss */
+/* line 185, ../.scss/style.scss */
 h1, h2 {
   font-family: 'Source Sans Pro', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
@@ -287,11 +277,11 @@ h1, h2 {
   padding: 0;
 }
 
-/* line 197, ../.scss/style.scss */
+/* line 192, ../.scss/style.scss */
 pre {
   margin-bottom: 1em;
 }
-/* line 198, ../.scss/style.scss */
+/* line 193, ../.scss/style.scss */
 pre code {
   font-family: 'Source Code Pro', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
@@ -300,16 +290,16 @@ pre code {
   margin: 0;
   padding: 0;
 }
-/* line 205, ../.scss/style.scss */
+/* line 200, ../.scss/style.scss */
 pre code.hljs {
   padding: 2em;
 }
-/* line 208, ../.scss/style.scss */
+/* line 203, ../.scss/style.scss */
 pre code span {
   font-weight: 400;
 }
 
-/* line 215, ../.scss/style.scss */
+/* line 210, ../.scss/style.scss */
 h2 {
   letter-spacing: -0.02em;
   font-weight: 700;
@@ -320,28 +310,28 @@ h2 {
   margin-bottom: 2px;
 }
 
-/* line 224, ../.scss/style.scss */
+/* line 219, ../.scss/style.scss */
 p {
   display: block;
   margin-bottom: 30px;
 }
 
-/* line 229, ../.scss/style.scss */
+/* line 224, ../.scss/style.scss */
 article {
   margin-bottom: 60px;
 }
 
-/* line 233, ../.scss/style.scss */
+/* line 228, ../.scss/style.scss */
 #disqus_thread {
   margin-bottom: 60px;
 }
 
-/* line 236, ../.scss/style.scss */
+/* line 231, ../.scss/style.scss */
 .homeLink {
   font-size: 12px;
 }
 
-/* line 240, ../.scss/style.scss */
+/* line 235, ../.scss/style.scss */
 .applicationFooter {
   margin-top: 160px;
   border-collapse: collapse;
@@ -350,18 +340,18 @@ article {
   background-color: #ddddde;
   color: #777776;
 }
-/* line 247, ../.scss/style.scss */
+/* line 242, ../.scss/style.scss */
 .applicationFooter a {
   color: #333332;
 }
-/* line 250, ../.scss/style.scss */
+/* line 245, ../.scss/style.scss */
 .applicationFooter .footer-row {
   overflow: hidden;
   max-width: 960px;
   margin: 0px auto;
   position: relative;
 }
-/* line 255, ../.scss/style.scss */
+/* line 250, ../.scss/style.scss */
 .applicationFooter .footer-row section {
   position: relative;
   float: left;
@@ -374,7 +364,7 @@ article {
   height: 100%;
   padding: 3em;
 }
-/* line 260, ../.scss/style.scss */
+/* line 255, ../.scss/style.scss */
 .applicationFooter .footer-row section .subtitle {
   font-size: 16px;
   line-height: 22px;
@@ -383,16 +373,16 @@ article {
   color: #999998;
   margin-bottom: .5rem;
 }
-/* line 272, ../.scss/style.scss */
+/* line 267, ../.scss/style.scss */
 .applicationFooter .footer-row section.about {
   text-align: right;
-  border-right: solid 1px #bbb;
 }
-/* line 276, ../.scss/style.scss */
+/* line 270, ../.scss/style.scss */
 .applicationFooter .footer-row section.join {
+  border-left: solid 1px #bbb;
   float: right;
 }
-/* line 280, ../.scss/style.scss */
+/* line 275, ../.scss/style.scss */
 .applicationFooter .footer-row .logo {
   display: inline-block;
   width: 64px;
@@ -400,7 +390,7 @@ article {
   position: relative;
   margin-bottom: 3em;
 }
-/* line 286, ../.scss/style.scss */
+/* line 281, ../.scss/style.scss */
 .applicationFooter .footer-row .logo svg {
   fill: #444443;
 }
