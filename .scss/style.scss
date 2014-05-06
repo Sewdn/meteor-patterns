@@ -13,7 +13,7 @@ body {
   height: 100%;
 }
 .layout-single-column {
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
 }
 .post-article {
@@ -74,6 +74,9 @@ body {
   color: white;
   header {
     margin-top:160px;
+    .post-item-meta {
+      margin-bottom: 20px;
+    }
   }
   .post-title {
     letter-spacing: -0.02em;
@@ -197,6 +200,8 @@ pre {
     letter-spacing: -0.04em;
     margin: 0;
     padding: 0;
+    max-width: 960px;
+    overflow: auto;
     &.hljs{
       padding: 2em;
     }
@@ -230,6 +235,7 @@ article{
 }
 .homeLink {
   font-size: 12px;
+  padding-left: 10px;
 }
 
 .applicationFooter {
@@ -310,3 +316,5 @@ article{
     }
   }
 }
+
+@import "_mediaqueries";
