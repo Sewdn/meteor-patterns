@@ -128,8 +128,17 @@ body {
   padding-left: 0.5em;
   padding-bottom: 0.5em;
 }
+/* line 56, ../.scss/style.scss */
+.post-content em {
+  font-style: italic;
+}
+/* line 59, ../.scss/style.scss */
+.post-content a {
+  color: black;
+  text-decoration: underline;
+}
 
-/* line 58, ../.scss/style.scss */
+/* line 65, ../.scss/style.scss */
 .background-size-full {
   display: table;
   height: 100%;
@@ -140,27 +149,27 @@ body {
   position: relative;
 }
 
-/* line 68, ../.scss/style.scss */
+/* line 75, ../.scss/style.scss */
 #login-buttons {
   position: fixed;
   z-index: 999;
 }
 
-/* line 73, ../.scss/style.scss */
+/* line 80, ../.scss/style.scss */
 .cover {
   height: 400px;
   margin-bottom: 60px;
   color: white;
 }
-/* line 77, ../.scss/style.scss */
+/* line 84, ../.scss/style.scss */
 .cover header {
   margin-top: 160px;
 }
-/* line 79, ../.scss/style.scss */
+/* line 86, ../.scss/style.scss */
 .cover header .post-item-meta {
   margin-bottom: 20px;
 }
-/* line 83, ../.scss/style.scss */
+/* line 90, ../.scss/style.scss */
 .cover .post-title {
   letter-spacing: -0.02em;
   font-weight: 700;
@@ -170,7 +179,7 @@ body {
   line-height: 1.1;
   margin-bottom: 8px;
 }
-/* line 92, ../.scss/style.scss */
+/* line 99, ../.scss/style.scss */
 .cover .post-field.subtitle {
   letter-spacing: -0.02em;
   font-weight: 300;
@@ -181,18 +190,18 @@ body {
   margin: 0;
 }
 
-/* line 104, ../.scss/style.scss */
+/* line 111, ../.scss/style.scss */
 .article-list li {
   margin-bottom: 60px;
 }
 
-/* line 108, ../.scss/style.scss */
+/* line 115, ../.scss/style.scss */
 .post-item-meta {
   font-size: 14px;
   color: #b3b3b1;
 }
 
-/* line 112, ../.scss/style.scss */
+/* line 119, ../.scss/style.scss */
 .post-item-meta-avatar {
   display: inline-block;
   width: 30px;
@@ -202,7 +211,7 @@ body {
   margin-bottom: -10px;
 }
 
-/* line 121, ../.scss/style.scss */
+/* line 128, ../.scss/style.scss */
 .avatar-icon {
   width: 32px;
   height: 32px;
@@ -211,71 +220,71 @@ body {
   border-radius: 100%;
 }
 
-/* line 129, ../.scss/style.scss */
+/* line 136, ../.scss/style.scss */
 .story-cover-content .post-item-meta {
   letter-spacing: -0.02em;
   font-weight: 400;
   font-style: normal;
 }
 
-/* line 135, ../.scss/style.scss */
+/* line 142, ../.scss/style.scss */
 a {
   color: #888887;
   text-decoration: none;
 }
 
-/* line 140, ../.scss/style.scss */
+/* line 147, ../.scss/style.scss */
 .cover-header .post-item-meta {
   margin-top: 12px;
 }
 
-/* line 145, ../.scss/style.scss */
+/* line 152, ../.scss/style.scss */
 .logo {
   display: block;
   position: absolute;
 }
-/* line 148, ../.scss/style.scss */
+/* line 155, ../.scss/style.scss */
 .logo svg {
   display: block;
   width: 100%;
 }
 
-/* line 153, ../.scss/style.scss */
+/* line 160, ../.scss/style.scss */
 .cover {
   overflow: hidden;
 }
-/* line 155, ../.scss/style.scss */
+/* line 162, ../.scss/style.scss */
 .cover .logo {
   position: absolute;
   top: 0px;
   width: 50%;
   height: 160%;
 }
-/* line 160, ../.scss/style.scss */
+/* line 167, ../.scss/style.scss */
 .cover .logo svg {
   fill: #111;
 }
-/* line 164, ../.scss/style.scss */
+/* line 171, ../.scss/style.scss */
 .cover .cover-content {
   position: relative;
 }
-/* line 167, ../.scss/style.scss */
+/* line 174, ../.scss/style.scss */
 .cover a {
   position: relative;
 }
 
-/* line 173, ../.scss/style.scss */
+/* line 180, ../.scss/style.scss */
 .profile .avatar-icon {
   width: 140px;
   height: 140px;
 }
 
-/* line 184, ../.scss/style.scss */
+/* line 191, ../.scss/style.scss */
 .home .logo svg {
   fill: #333;
 }
 
-/* line 190, ../.scss/style.scss */
+/* line 197, ../.scss/style.scss */
 h1, h2 {
   font-family: 'Source Sans Pro', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
@@ -283,11 +292,11 @@ h1, h2 {
   padding: 0;
 }
 
-/* line 197, ../.scss/style.scss */
+/* line 204, ../.scss/style.scss */
 pre {
   margin-bottom: 1em;
 }
-/* line 198, ../.scss/style.scss */
+/* line 205, ../.scss/style.scss */
 pre code {
   font-family: 'Source Code Pro', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
@@ -298,16 +307,16 @@ pre code {
   max-width: 960px;
   overflow: auto;
 }
-/* line 207, ../.scss/style.scss */
+/* line 214, ../.scss/style.scss */
 pre code.hljs {
   padding: 2em;
 }
-/* line 210, ../.scss/style.scss */
+/* line 217, ../.scss/style.scss */
 pre code span {
   font-weight: 400;
 }
 
-/* line 217, ../.scss/style.scss */
+/* line 224, ../.scss/style.scss */
 h2 {
   letter-spacing: -0.02em;
   font-weight: 700;
@@ -318,29 +327,29 @@ h2 {
   margin-bottom: 2px;
 }
 
-/* line 226, ../.scss/style.scss */
+/* line 233, ../.scss/style.scss */
 p {
   display: block;
   margin-bottom: 30px;
 }
 
-/* line 231, ../.scss/style.scss */
+/* line 238, ../.scss/style.scss */
 article {
   margin-bottom: 60px;
 }
 
-/* line 235, ../.scss/style.scss */
+/* line 242, ../.scss/style.scss */
 #disqus_thread {
   margin-bottom: 60px;
 }
 
-/* line 238, ../.scss/style.scss */
+/* line 245, ../.scss/style.scss */
 .homeLink {
   font-size: 12px;
   padding-left: 10px;
 }
 
-/* line 243, ../.scss/style.scss */
+/* line 250, ../.scss/style.scss */
 .applicationFooter {
   margin-top: 160px;
   border-collapse: collapse;
@@ -349,18 +358,18 @@ article {
   background-color: #ddddde;
   color: #777776;
 }
-/* line 250, ../.scss/style.scss */
+/* line 257, ../.scss/style.scss */
 .applicationFooter a {
   color: #333332;
 }
-/* line 253, ../.scss/style.scss */
+/* line 260, ../.scss/style.scss */
 .applicationFooter .footer-row {
   overflow: hidden;
   max-width: 960px;
   margin: 0px auto;
   position: relative;
 }
-/* line 258, ../.scss/style.scss */
+/* line 265, ../.scss/style.scss */
 .applicationFooter .footer-row section {
   position: relative;
   float: left;
@@ -373,7 +382,7 @@ article {
   height: 100%;
   padding: 3em;
 }
-/* line 263, ../.scss/style.scss */
+/* line 270, ../.scss/style.scss */
 .applicationFooter .footer-row section .subtitle {
   font-size: 16px;
   line-height: 22px;
@@ -382,16 +391,16 @@ article {
   color: #999998;
   margin-bottom: .5rem;
 }
-/* line 275, ../.scss/style.scss */
+/* line 282, ../.scss/style.scss */
 .applicationFooter .footer-row section.about {
   text-align: right;
 }
-/* line 278, ../.scss/style.scss */
+/* line 285, ../.scss/style.scss */
 .applicationFooter .footer-row section.join {
   border-left: solid 1px #bbb;
   float: right;
 }
-/* line 283, ../.scss/style.scss */
+/* line 290, ../.scss/style.scss */
 .applicationFooter .footer-row .logo {
   display: inline-block;
   width: 64px;
@@ -399,20 +408,20 @@ article {
   position: relative;
   margin-bottom: 3em;
 }
-/* line 289, ../.scss/style.scss */
+/* line 296, ../.scss/style.scss */
 .applicationFooter .footer-row .logo svg {
   fill: #444443;
 }
 
-/* line 296, ../.scss/style.scss */
+/* line 303, ../.scss/style.scss */
 .socialShare {
   text-align: center;
 }
-/* line 298, ../.scss/style.scss */
+/* line 305, ../.scss/style.scss */
 .socialShare h2 {
   font-size: 2em;
 }
-/* line 301, ../.scss/style.scss */
+/* line 308, ../.scss/style.scss */
 .socialShare a.button {
   font-family: 'Source Sans Pro', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
@@ -424,8 +433,9 @@ article {
   -webkit-font-smoothing: antialiased;
   padding: 0.3em;
   border-radius: 0.15em;
+  text-decoration: none;
 }
-/* line 312, ../.scss/style.scss */
+/* line 320, ../.scss/style.scss */
 .socialShare a.button.twitter {
   background-color: #00aced;
   color: white;

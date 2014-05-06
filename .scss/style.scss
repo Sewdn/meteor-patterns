@@ -53,6 +53,13 @@ body {
     }
     margin-bottom: 1em;
   }
+  em {
+    font-style: italic;
+  }
+  a {
+    color: black;
+    text-decoration: underline;
+  }
 }
 
 .background-size-full {
@@ -309,12 +316,10 @@ article{
     -webkit-font-smoothing: antialiased;
     padding: 0.3em;
     border-radius:0.15em;
+    text-decoration: none;
     &.twitter{
       background-color: #00aced;
       color: white;
-    }
-    a.share[data-icon="Twitter"] {
-
     }
   }
 }
