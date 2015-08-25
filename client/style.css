@@ -1,4 +1,4 @@
-/* line 17, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,46 +20,46 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+/* line 116, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
@@ -284,7 +284,7 @@ a {
 }
 
 /* line 196, ../.scss/style.scss */
-h1, h2 {
+h1, h2, h2 {
   font-family: 'Source Sans Pro', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   margin: 0;
@@ -292,10 +292,17 @@ h1, h2 {
 }
 
 /* line 203, ../.scss/style.scss */
+h3 {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 20px;
+}
+
+/* line 209, ../.scss/style.scss */
 pre {
   margin-bottom: 1em;
 }
-/* line 204, ../.scss/style.scss */
+/* line 210, ../.scss/style.scss */
 pre code {
   font-family: 'Source Code Pro', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
@@ -306,16 +313,16 @@ pre code {
   max-width: 960px;
   overflow: auto;
 }
-/* line 213, ../.scss/style.scss */
+/* line 219, ../.scss/style.scss */
 pre code.hljs {
   padding: 2em;
 }
-/* line 216, ../.scss/style.scss */
+/* line 222, ../.scss/style.scss */
 pre code span {
   font-weight: 400;
 }
 
-/* line 223, ../.scss/style.scss */
+/* line 229, ../.scss/style.scss */
 h2 {
   letter-spacing: -0.02em;
   font-weight: 700;
@@ -326,29 +333,29 @@ h2 {
   margin-bottom: 2px;
 }
 
-/* line 232, ../.scss/style.scss */
+/* line 238, ../.scss/style.scss */
 p {
   display: block;
   margin-bottom: 30px;
 }
 
-/* line 237, ../.scss/style.scss */
+/* line 243, ../.scss/style.scss */
 article {
   margin-bottom: 60px;
 }
 
-/* line 241, ../.scss/style.scss */
+/* line 247, ../.scss/style.scss */
 #disqus_thread {
   margin-bottom: 60px;
 }
 
-/* line 244, ../.scss/style.scss */
+/* line 250, ../.scss/style.scss */
 .homeLink {
   font-size: 12px;
   padding-left: 10px;
 }
 
-/* line 249, ../.scss/style.scss */
+/* line 255, ../.scss/style.scss */
 .applicationFooter {
   margin-top: 160px;
   border-collapse: collapse;
@@ -357,31 +364,31 @@ article {
   background-color: #ddddde;
   color: #777776;
 }
-/* line 256, ../.scss/style.scss */
+/* line 262, ../.scss/style.scss */
 .applicationFooter a {
   color: #333332;
 }
-/* line 259, ../.scss/style.scss */
+/* line 265, ../.scss/style.scss */
 .applicationFooter .footer-row {
   overflow: hidden;
   max-width: 960px;
   margin: 0px auto;
   position: relative;
 }
-/* line 264, ../.scss/style.scss */
+/* line 270, ../.scss/style.scss */
 .applicationFooter .footer-row section {
   position: relative;
   float: left;
   display: inline-block;
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   vertical-align: top;
   width: 50%;
   height: 100%;
   padding: 3em;
 }
-/* line 269, ../.scss/style.scss */
+/* line 275, ../.scss/style.scss */
 .applicationFooter .footer-row section .subtitle {
   font-size: 16px;
   line-height: 22px;
@@ -390,16 +397,16 @@ article {
   color: #999998;
   margin-bottom: .5rem;
 }
-/* line 281, ../.scss/style.scss */
+/* line 287, ../.scss/style.scss */
 .applicationFooter .footer-row section.about {
   text-align: right;
 }
-/* line 284, ../.scss/style.scss */
+/* line 290, ../.scss/style.scss */
 .applicationFooter .footer-row section.join {
   border-left: solid 1px #bbb;
   float: right;
 }
-/* line 289, ../.scss/style.scss */
+/* line 295, ../.scss/style.scss */
 .applicationFooter .footer-row .logo {
   display: inline-block;
   width: 64px;
@@ -407,20 +414,20 @@ article {
   position: relative;
   margin-bottom: 3em;
 }
-/* line 295, ../.scss/style.scss */
+/* line 301, ../.scss/style.scss */
 .applicationFooter .footer-row .logo svg {
   fill: #444443;
 }
 
-/* line 302, ../.scss/style.scss */
+/* line 308, ../.scss/style.scss */
 .socialShare {
   text-align: center;
 }
-/* line 304, ../.scss/style.scss */
+/* line 310, ../.scss/style.scss */
 .socialShare h2 {
   font-size: 2em;
 }
-/* line 307, ../.scss/style.scss */
+/* line 313, ../.scss/style.scss */
 .socialShare a.button {
   font-family: 'Source Sans Pro', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
@@ -434,7 +441,7 @@ article {
   border-radius: 0.15em;
   text-decoration: none;
 }
-/* line 319, ../.scss/style.scss */
+/* line 325, ../.scss/style.scss */
 .socialShare a.button.twitter {
   background-color: #00aced;
   color: white;

@@ -193,11 +193,17 @@ margin-top: 12px;
   }
 }
 
-h1, h2 {
+h1, h2, h2 {
   font-family: 'Source Sans Pro', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   margin: 0;
   padding: 0;
+}
+
+h3 {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 20px;
 }
 
 pre {
