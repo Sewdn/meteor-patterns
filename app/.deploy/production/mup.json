@@ -1,0 +1,38 @@
+{
+  // Server authentication info
+  "servers": [
+    {
+      "host": "ds2",
+      "username": "sewdn",
+      // or pem file (ssh based authentication)
+      "pem": "~/.ssh/id_rsa"
+    }
+  ],
+
+  // Install MongoDB in the server, does not destroy local MongoDB on future setup
+  "setupMongo": false,
+
+  // WARNING: Node.js is required! Only skip if you already have Node.js installed on server.
+  "setupNode": false,
+
+  // WARNING: If nodeVersion omitted will setup 0.10.36 by default. Do not use v, only version number.
+  "nodeVersion": "0.10.36",
+
+  // Install PhantomJS in the server
+  "setupPhantom": false,
+
+  // Application name (No spaces)
+  "appName": "meteorpatterns",
+
+  // Location of app (local directory)
+  "app": "../../",
+
+  // Configure environment
+  "env": {
+    "ROOT_URL": "http://meteorpatterns.com"
+  },
+
+  // Meteor Up checks if the app comes online just after the deployment
+  // before mup checks that, it will wait for no. of seconds configured below
+  "deployCheckWaitTime": 15
+}

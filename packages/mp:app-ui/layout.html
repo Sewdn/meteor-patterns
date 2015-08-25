@@ -1,0 +1,29 @@
+<template name="layout">
+  {{> Template.dynamic template=main}}
+  {{> footer}}
+  {{> logoSrc}}
+</template>
+
+<template name="footer"><footer class="applicationFooter">
+    <div class="footer-row">
+      <section class="about">
+        {{> logo}}
+        <div class="subtitle">About</div>
+        <p class="desc">Meteorpatterns.com is a resource covering interesting design patterns and insights for meteor development</p>
+
+        <a href="http://redandivory.com" target='_blank'  class="attribution inverse"><span class="icon-rni"></span> <span>Made by Red&Ivory</span></a>
+      </section>
+
+      <section class="join">
+        <a href="http://redandivory.com" target='_blank'>{{> rniLogo}}</a>
+        <div class="subtitle">Join in!</div>
+        <p class="desc">This platform is setup as a frontend for external content on github. Contact me if you would like to publish on this platform.</p>
+        <div class="contact-info">
+          <a href="mailto:pieter.soudan@redandivory.be" target='_blank'>pieter.soudan@redandivory.be</a><br />
+          <a href="http://twitter.com/sewdn" class='twitter' target='_blank'>@sewdn</a>
+          <br />
+        </div>
+      </section>
+    </div>
+  </footer>
+</template>
