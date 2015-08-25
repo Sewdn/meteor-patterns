@@ -12,7 +12,7 @@ Package.onUse(function(api) {
     'markdown',
     'kadira:flow-router',
     'kadira:blaze-layout',
-    'kenlimmj:hljs'
+    'sewdn:highlightjs'
   ], ['client']);
 
   api.use([
