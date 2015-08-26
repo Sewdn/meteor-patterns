@@ -8,6 +8,7 @@ Package.onUse(function(api) {
   api.versionsFrom('1.1.0.3');
 
   api.use([
+    'http',
     'underscore'
   ], ['client', 'server']);
 
@@ -15,7 +16,6 @@ Package.onUse(function(api) {
     'templating',
     'kadira:flow-router',
     'kadira:blaze-layout',
-    'http',
     'percolatestudio:segment.io'
   ], ['client']);
 

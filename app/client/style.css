@@ -289,21 +289,25 @@ h1, h2, h3 {
   font-weight: 400;
   margin: 0;
   padding: 0;
-  margin-bottom: 20px;
-  margin-top: 20px;
 }
 
-/* line 205, ../../assets/scss/style.scss */
-h3 {
+/* line 204, ../../assets/scss/style.scss */
+.post-content h1, .post-content h2, .post-content h3 {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+/* line 209, ../../assets/scss/style.scss */
+.post-content h3 {
   font-size: 1.7rem;
   text-transform: uppercase;
 }
 
-/* line 210, ../../assets/scss/style.scss */
+/* line 215, ../../assets/scss/style.scss */
 pre {
   margin-bottom: 1em;
 }
-/* line 211, ../../assets/scss/style.scss */
+/* line 216, ../../assets/scss/style.scss */
 pre code {
   font-family: 'Source Code Pro', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
@@ -314,16 +318,16 @@ pre code {
   max-width: 960px;
   overflow: auto;
 }
-/* line 220, ../../assets/scss/style.scss */
+/* line 225, ../../assets/scss/style.scss */
 pre code.hljs {
   padding: 2em;
 }
-/* line 223, ../../assets/scss/style.scss */
+/* line 228, ../../assets/scss/style.scss */
 pre code span {
   font-weight: 400;
 }
 
-/* line 230, ../../assets/scss/style.scss */
+/* line 235, ../../assets/scss/style.scss */
 h2 {
   letter-spacing: -0.02em;
   font-weight: 700;
@@ -334,29 +338,29 @@ h2 {
   margin-bottom: 2px;
 }
 
-/* line 239, ../../assets/scss/style.scss */
+/* line 244, ../../assets/scss/style.scss */
 p {
   display: block;
   margin-bottom: 30px;
 }
 
-/* line 244, ../../assets/scss/style.scss */
+/* line 249, ../../assets/scss/style.scss */
 article {
   margin-bottom: 60px;
 }
 
-/* line 248, ../../assets/scss/style.scss */
+/* line 253, ../../assets/scss/style.scss */
 #disqus_thread {
   margin-bottom: 60px;
 }
 
-/* line 251, ../../assets/scss/style.scss */
+/* line 256, ../../assets/scss/style.scss */
 .homeLink {
   font-size: 12px;
   padding-left: 10px;
 }
 
-/* line 256, ../../assets/scss/style.scss */
+/* line 261, ../../assets/scss/style.scss */
 .applicationFooter {
   margin-top: 160px;
   border-collapse: collapse;
@@ -365,18 +369,18 @@ article {
   background-color: #ddddde;
   color: #777776;
 }
-/* line 263, ../../assets/scss/style.scss */
+/* line 268, ../../assets/scss/style.scss */
 .applicationFooter a {
   color: #333332;
 }
-/* line 266, ../../assets/scss/style.scss */
+/* line 271, ../../assets/scss/style.scss */
 .applicationFooter .footer-row {
   overflow: hidden;
   max-width: 960px;
   margin: 0px auto;
   position: relative;
 }
-/* line 271, ../../assets/scss/style.scss */
+/* line 276, ../../assets/scss/style.scss */
 .applicationFooter .footer-row section {
   position: relative;
   float: left;
@@ -389,7 +393,7 @@ article {
   height: 100%;
   padding: 3em;
 }
-/* line 276, ../../assets/scss/style.scss */
+/* line 281, ../../assets/scss/style.scss */
 .applicationFooter .footer-row section .subtitle {
   font-size: 16px;
   line-height: 22px;
@@ -398,16 +402,16 @@ article {
   color: #999998;
   margin-bottom: .5rem;
 }
-/* line 288, ../../assets/scss/style.scss */
+/* line 293, ../../assets/scss/style.scss */
 .applicationFooter .footer-row section.about {
   text-align: right;
 }
-/* line 291, ../../assets/scss/style.scss */
+/* line 296, ../../assets/scss/style.scss */
 .applicationFooter .footer-row section.join {
   border-left: solid 1px #bbb;
   float: right;
 }
-/* line 296, ../../assets/scss/style.scss */
+/* line 301, ../../assets/scss/style.scss */
 .applicationFooter .footer-row .logo {
   display: inline-block;
   width: 64px;
@@ -415,20 +419,20 @@ article {
   position: relative;
   margin-bottom: 3em;
 }
-/* line 302, ../../assets/scss/style.scss */
+/* line 307, ../../assets/scss/style.scss */
 .applicationFooter .footer-row .logo svg {
   fill: #444443;
 }
 
-/* line 309, ../../assets/scss/style.scss */
+/* line 314, ../../assets/scss/style.scss */
 .socialShare {
   text-align: center;
 }
-/* line 311, ../../assets/scss/style.scss */
+/* line 316, ../../assets/scss/style.scss */
 .socialShare h2 {
   font-size: 2em;
 }
-/* line 314, ../../assets/scss/style.scss */
+/* line 319, ../../assets/scss/style.scss */
 .socialShare a.button {
   font-family: 'Source Sans Pro', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
@@ -442,7 +446,7 @@ article {
   border-radius: 0.15em;
   text-decoration: none;
 }
-/* line 326, ../../assets/scss/style.scss */
+/* line 331, ../../assets/scss/style.scss */
 .socialShare a.button.twitter {
   background-color: #00aced;
   color: white;

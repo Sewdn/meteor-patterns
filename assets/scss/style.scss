@@ -198,13 +198,18 @@ h1, h2, h3 {
   font-weight: 400;
   margin: 0;
   padding: 0;
-  margin-bottom:20px;
-  margin-top:20px;
 }
 
-h3 {
-  font-size: 1.7rem;
-  text-transform: uppercase;
+.post-content {
+  h1, h2, h3 {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  h3 {
+    font-size: 1.7rem;
+    text-transform: uppercase;
+  }
 }
 
 pre {

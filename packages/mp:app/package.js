@@ -9,6 +9,7 @@ Package.onUse(function(api) {
 
   api.imply([
     'mp:core',
+    'mp:app-ssr',
     'mp:app-ui',
     'mp:app-posts'
   ], ['client', 'server']);
