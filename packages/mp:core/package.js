@@ -15,7 +15,8 @@ Package.onUse(function(api) {
     'templating',
     'kadira:flow-router',
     'kadira:blaze-layout',
-    'http'
+    'http',
+    'percolatestudio:segment.io'
   ], ['client']);
 
   api.addFiles([
