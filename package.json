@@ -2,11 +2,7 @@
   "name": "meteorpatterns",
   "scripts": {
     "start": "cd app && MONGO_URL=mongodb://localhost:27017/mp meteor --settings .deploy/local.json --port 3000",
-    "landing": "cd app && MONGO_URL=mongodb://localhost:27017/myproject meteor --settings .deploy/local.json --port 3001",
-    "services": "cd services && MONGO_URL=mongodb://localhost:27017/myproject meteor --settings .deploy/local.json --port 3002",
-    "deploy": "npm run deploy-app & npm run deploy-landing & npm run deploy-services",
-    "deploy-app": "cd app/.deploy/production && mup deploy",
-    "deploy-landing": "cd landing/.deploy/production && mup deploy",
-    "deploy-services": "cd services/.deploy/production && mup deploy"
+    "deploy": "npm run deploy-app",
+    "deploy-app": "cd app/.deploy/production && mup deploy"
   }
 }
